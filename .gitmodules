@@ -1,0 +1,6 @@
+[submodule "dobby"]
+	path = external/dobby
+	url = https://github.com/EtherealPsyche/Dobby.git
+[submodule "minhook"]
+	path = external/minhook
+	url = https://github.com/TsudaKageyu/minhook.git

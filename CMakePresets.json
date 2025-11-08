@@ -1,0 +1,46 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 22,
+        "patch": 1
+    },
+    "configurePresets": [
+        {
+            "name": "Android",
+            "hidden": false,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Android",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "BUILD_FOR_ANDROID": true
+            },
+            "warnings": {
+                "deprecated": false
+            }
+        },
+        {
+            "name": "Windows",
+            "hidden": false,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Windows",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "BUILD_FOR_WINDOWS": true
+            },
+            "warnings": {
+                "deprecated": false
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Android",
+            "configurePreset": "Android"
+        },
+        {
+            "name": "Windows",
+            "configurePreset": "Windows"
+        }
+    ]
+}
