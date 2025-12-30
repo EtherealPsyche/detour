@@ -8,7 +8,6 @@
     "configurePresets": [
         {
             "name": "Android",
-            "hidden": false,
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/build/Android",
             "cacheVariables": {
@@ -21,7 +20,6 @@
         },
         {
             "name": "Windows",
-            "hidden": false,
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/build/Windows",
             "cacheVariables": {
