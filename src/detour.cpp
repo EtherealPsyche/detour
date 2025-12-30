@@ -3,7 +3,7 @@
 #ifdef __ANDROID__
 #include "dobby.h"
 #elif defined(_WIN32) || defined(_WIN64)
-#include "minhook.h"
+#include "MinHook.h"
 #else
 #error "unsupported compile target"
 #endif
